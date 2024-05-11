@@ -1,0 +1,68 @@
+
+body {
+    background-color: rgb(251, 207, 40);
+    background-image: linear-gradient(90deg, rgba(89, 94, 252, 1) 0%, rgba(89, 246, 252, 1) 100%);
+    background-size: auto;
+    background-position: left top;
+    background-repeat: repeat; 
+    font-family: 'Akaya Kanadaka', sans-serif;
+    src: url('http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext') format('woff');
+    }
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 0.5fr) repeat(2, 1fr);
+    grid-template-rows: repeat(5, 0.5fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+        
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 3; }
+    .div4 { grid-area: 3 / 1 / 4 / 2; }
+    .div5 { grid-area: 3 / 2 / 4 / 3; }
+    .div6 { grid-area: 4 / 1 / 5 / 3; }
+    .div7 { grid-area: 5 / 1 / 6 / 2; }
+    .div8 { grid-area: 1 / 3 / 2 / 5; }
+    .div9 { grid-area: 2 / 3 / 3 / 5; }
+    .div10 { grid-area: 3 / 3 / 4 / 5; }
+    .div11 { grid-area: 4 / 3 / 5 / 5; }
+
+
+.div1 img {
+    border: 7px solid #000; /* Grubość i kolor ramki */
+    padding: 0px; /* Odstęp między ramką a zdjęciem */
+    max-width: 100%; /* Maksymalna szerokość zdjęcia (pół szerokości kolumny lewej) */
+    height: auto;
+}
+       
+.div2 {
+    flex: 1; /* Zajmuje resztę dostępnego miejsca w lewej kolumnie */
+    padding-left: 20px; /* Odstęp między tekstem a ramką */
+  }
+
+.div3{
+    font-size: 20px;
+}
+.div4{
+    font-size: 20px;
+}
+.div5{
+    font-size: 20px;
+}
+.div6{
+    font-size: 20px;
+} 
+.div8{
+    font-size: 20px;
+}
+.div9{
+    font-size: 20px;
+}
+.div10{
+    font-size: 20px;
+}
+.div11{
+    font-size: 20px;
+}
